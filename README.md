@@ -1,2 +1,2 @@
-# About this repo
-This repository contains devcontainer settings for my personal use on each branch.
+#確認事項
+.devcontainer/.env localのuserIDとgroupIDをセットする。コンテナ内ではこれらのIDを用いて環境が設定される
