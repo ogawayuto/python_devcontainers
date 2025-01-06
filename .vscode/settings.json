@@ -15,6 +15,7 @@
     "cSpell.language": "en",
     "cSpell.enabled": true,
     "cSpell.words": [
+        "commitizen",
         "pytest"
     ]
 }
