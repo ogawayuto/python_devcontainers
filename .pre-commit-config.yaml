@@ -37,8 +37,8 @@ repos:
         -   id: gitleaks
             args: [--verbose]
 
-    # -   repo: https://github.com/commitizen-tools/commitizen
-    #     rev: master
-    #     hooks:
-    #     - id: commitizen
-    #         stages: [commit-msg]
+    -   repo: https://github.com/commitizen-tools/commitizen
+        rev: master
+        hooks:
+        -   id: commitizen
+            stages: [commit-msg]
