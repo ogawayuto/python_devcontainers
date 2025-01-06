@@ -38,7 +38,7 @@ repos:
             args: [--verbose]
 
     -   repo: https://github.com/commitizen-tools/commitizen
-        rev: master
+        rev: v4.1.0
         hooks:
         -   id: commitizen
             stages: [commit-msg]
