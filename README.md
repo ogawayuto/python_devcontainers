@@ -18,3 +18,7 @@ pre-commit install
 ```bash
 pre-commit install --hook-type commit-msg
 ```
+
+## project nameの変更
+python_project/ のディレクトリを変更する
+pyproject.tomlのnameを変更する
