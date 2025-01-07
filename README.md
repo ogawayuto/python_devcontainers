@@ -1,6 +1,8 @@
 # 確認事項
 
 # 設定方法
+
+## userIDとgroupIDの設定
 .devcontainer/.env localのuserIDとgroupIDをセットする。コンテナ内ではこれらのIDを用いて環境が設定される
 
 ## precommitの設定方法
