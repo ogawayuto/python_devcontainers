@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/python:3.12
+FROM mcr.microsoft.com/devcontainers/typescript-node:22
 
 ARG USERNAME
 ARG USER_UID

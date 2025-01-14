@@ -48,13 +48,15 @@
                 "aaron-bond.beter-comments",
                 "mechatroner.rainbow-csv",
                 "usernamehw.errorlens",
-                "ziyasal.vscode-open-in-github",
-                // project specific
-                "ms-python.python",
-                "ms-python.vscode-pylance",
                 "streetsidesoftware.code-spell-checker",
-                "charliermarsh.ruff",
-                "tamasfe.even-better-toml"
+                "ziyasal.vscode-open-in-github",
+                "tamasfe.even-better-toml",
+                // project specific
+                "yoavbls.pretty-ts-errors",
+                "pmneo.tsimporter",
+                "jasonnutter.search-node-modules",
+                "biomejs.biome"
+                
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "zsh",
@@ -70,13 +72,8 @@
                 "python.testing.pytestArgs": [
                     "tests"
                 ],
-                "[python]": {
-                    "editor.formatOnSave": true,
-                    "editor.codeActionsOnSave": {
-                        "source.fixAll": "explicit",
-                        "source.organizeImports": "explicit"
-                    },
-                    "editor.defaultFormatter": "charliermarsh.ruff"
+                "[javascript]": {
+                    "editor.defaultFormatter": "biomejs.biome"
                 },
                 "extensions.ignoreRecommendations": false
                 
