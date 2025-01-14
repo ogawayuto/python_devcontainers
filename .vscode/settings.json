@@ -1,20 +1,4 @@
 {
-    "files.exclude": {
-    },
-    "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
-    "[python]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": "explicit",
-            "source.organizeImports": "explicit"
-        },
-        "editor.defaultFormatter": "charliermarsh.ruff"
-    },
-    "extensions.ignoreRecommendations": false,
     "cSpell.language": "en",
     "cSpell.enabled": true,
     "cSpell.words": [
