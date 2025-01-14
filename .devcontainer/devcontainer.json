@@ -48,13 +48,14 @@
                 "aaron-bond.beter-comments",
                 "mechatroner.rainbow-csv",
                 "usernamehw.errorlens",
+                "streetsidesoftware.code-spell-checker",
                 "ziyasal.vscode-open-in-github",
+                "tamasfe.even-better-toml",
                 // project specific
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "streetsidesoftware.code-spell-checker",
-                "charliermarsh.ruff",
-                "tamasfe.even-better-toml"
+                "charliermarsh.ruff"
+                
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "zsh",
