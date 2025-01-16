@@ -6,7 +6,11 @@
 	"repository": "https://github.com/ogawayuto/devcontainers.git",
 	"author": "ogawayuto",
 	"license": "MIT",
+	"scripts": {},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4"
+		"@biomejs/biome": "1.9.4",
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-conventional": "^19.6.0",
+		"lefthook": "^1.10.7"
 	}
 }
