@@ -42,3 +42,13 @@ pyproject.tomlのnameを変更する
 ### ruffの設定
 ruff.tomlに無視するファイルやルールなどの設定を追加する
 
+## TypeScript
+### userIDとgroupIDの設定
+node(1000)というユーザとグループが最初からあるため、.devcontainer/.envには設定不要
+もしIDが1000以外のものを使いたい場合は、.devcontainer/Dockerfileのコメント化してあるユーザの作成を行う。その際は.envにもuserIDとgroupIDを設定し、devcontainer.jsonのユーザを変更する
+
+## biomeの設定
+biome.jsonに無視するファイルやルールなどの設定を追加する
+
+## package.jsonの設定
+yarn add や package.jsonを用いてパッケージを追加する

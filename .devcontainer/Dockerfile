@@ -16,13 +16,15 @@ RUN apt-get update && \
     git
 
 # Update existing user
-RUN groupmod --gid $USER_GID $USERNAME \
-    && usermod --uid $USER_UID --gid $USER_GID $USERNAME \
-    && chown -R $USER_UID:$USER_GID /home/$USERNAME
+# RUN groupmod --gid $USER_GID $USERNAME \
+#     && usermod --uid $USER_UID --gid $USER_GID $USERNAME \
+#     && chown -R $USER_UID:$USER_GID /home/$USERNAME
 
+# if you use userid other than 1000, you need to create user
 # Create the user
-# RUN groupadd --gid $USER_GID $USERNAME
-# RUN useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
+# RUN groupadd --gid $USER_GID $USERNAME \
+#     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
+#     && chown -R $USER_UID:$USER_GID /home/$USERNAME
 
 
 RUN apt-get update \
@@ -37,5 +39,6 @@ RUN apt-get update \
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
-RUN sudo chsh -s "$(which zsh)"
+RUN sudo chsh -s "$(which zsh)" 
+
 

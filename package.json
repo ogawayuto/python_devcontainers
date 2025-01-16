@@ -1,0 +1,12 @@
+{
+	"name": "ts-node",
+	"version": "1.0.0",
+	"description": "ts-node project",
+	"main": "index.js",
+	"repository": "https://github.com/ogawayuto/devcontainers.git",
+	"author": "ogawayuto",
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	}
+}
