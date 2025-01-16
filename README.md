@@ -52,3 +52,10 @@ biome.jsonに無視するファイルやルールなどの設定を追加する
 
 ## package.jsonの設定
 yarn add や package.jsonを用いてパッケージを追加する
+
+## lefthookの設定
+lefthook.ymlにcommit時等に実行したいコマンドを追加する
+以下のコマンドでインストールする
+```bash
+yarn lefthook install
+```
