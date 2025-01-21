@@ -18,7 +18,7 @@ def add(a: int, b: int) -> int:
 
     """
     try:
-        return a + b
+        return _private_add(a, b)
     except TypeError as e:
         msg = "a and b must be integers"
         raise TypeError(msg) from e
