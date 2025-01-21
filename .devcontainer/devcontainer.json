@@ -55,7 +55,7 @@
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "charliermarsh.ruff"
-                
+
             ],
             "settings": {
                 "terminal.integrated.defaultProfile.linux": "zsh",
@@ -71,6 +71,7 @@
                 "python.testing.pytestArgs": [
                     "tests"
                 ],
+                "python.analysis.typeCheckingMode": "basic",
                 "[python]": {
                     "editor.formatOnSave": true,
                     "editor.codeActionsOnSave": {
@@ -80,7 +81,7 @@
                     "editor.defaultFormatter": "charliermarsh.ruff"
                 },
                 "extensions.ignoreRecommendations": false
-                
+
             }
         }
     },

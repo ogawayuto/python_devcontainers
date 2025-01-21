@@ -14,7 +14,6 @@ repos:
         -   id: detect-aws-credentials
             args: [--allow-missing-credentials]
         -   id: detect-private-key
-        -   id: check-json
     -   repo: https://github.com/Yelp/detect-secrets
         rev: v1.5.0
         hooks:
@@ -36,6 +35,15 @@ repos:
         hooks:
         -   id: gitleaks
             args: [--verbose]
+
+    -   repo: local
+        hooks:
+        -   id: pytest
+            name: pytest
+            entry: pytest tests/ -v -s
+            language: system
+            pass_filenames: false
+            always_run: true
 
     -   repo: https://github.com/commitizen-tools/commitizen
         rev: v4.1.0
