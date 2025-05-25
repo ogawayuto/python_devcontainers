@@ -13,8 +13,10 @@ RUN apt-get update && \
     apt-transport-https \
     libarchive-tools \
     ca-certificates \
-    git
+    git \
+    vim
 
+RUN echo "syntax on\n:set encoding=utf-8 \n:set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8" > /home/$USERNAME/.vimrc 
 # Update existing user
 RUN groupmod --gid $USER_GID $USERNAME \
     && usermod --uid $USER_UID --gid $USER_GID $USERNAME \

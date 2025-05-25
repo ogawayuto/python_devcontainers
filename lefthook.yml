@@ -1,0 +1,19 @@
+pre-commit:
+  parallel: true
+  commands:
+    gitleaks:
+      run: zsh -c "source ~/.zshrc && gitleaks git --pre-commit --staged -v"
+    ruff-lint:
+      glob: "*.py"
+      run: poetry run ruff check --fix {staged_files}
+    ruff-format:
+      glob: "*.py"
+      run: poetry run ruff format {staged_files}
+    pytest:
+      run: pytest tests/ -v -s
+
+commit-msg:
+  skip: merge
+  commands:
+    add-branch-name:
+      run: .lefthook/commit-msg/add-branch-name.sh {1}

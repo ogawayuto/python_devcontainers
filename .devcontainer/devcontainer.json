@@ -27,6 +27,7 @@
     },
     "remoteEnv": {
         "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}",
+        "CONTAINER_WORKSPACE_FOLDER": "${containerWorkspaceFolder}",
         "POETRY_CACHE_DIR": "/workspace/.cache"
     },
     // Configure tool-specific properties.
@@ -54,7 +55,9 @@
                 // project specific
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "charliermarsh.ruff"
+                "charliermarsh.ruff",
+                "github.vscode-pull-request-github",
+                "github.vscode-github-actions"
 
             ],
             "settings": {
@@ -87,7 +90,7 @@
     },
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
-    // "onCreateCommand": "sh .devcontainer/onCreateCommand.sh",
+    "onCreateCommand": "sh .devcontainer/onCreate.sh",
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "docker --version",
     "postAttachCommand": "sh .devcontainer/postAttach.sh",

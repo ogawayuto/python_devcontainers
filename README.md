@@ -24,18 +24,11 @@ vscodeの設定を追加する
 .vscode/settings.jsonにspellcheckの設定を追加する
 
 ## Python
-### precommitの設定方法
-1. hooks の更新
+## lefthookの設定
+lefthook.ymlにcommit時等に実行したいコマンドを追加する
+以下のコマンドでインストールする
 ```bash
-poetry run pre-commit update
-```
-2. pre-commitの設定
-```bash
-poetry run pre-commit install
-```
-3. pre-commitのcommit-msgの設定
-```bash
-poetry run pre-commit install --hook-type commit-msg
+lefthook install
 ```
 
 ### project nameの変更
